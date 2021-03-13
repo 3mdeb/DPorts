@@ -1,0 +1,11 @@
+--- plugins/cpu/meson.build.orig	2021-03-13 18:16:16.797438564 +0100
++++ plugins/cpu/meson.build	2021-03-13 18:16:46.093834284 +0100
+@@ -27,7 +27,7 @@
+   ],
+ )
+ 
+-if cc.has_argument('-fcf-protection')
++if cc.has_argument('-fcf-protection') and host_machine.system() != 'dragonfly'
+   libfwupdcethelper = static_library('fwupdcethelper',
+     sources : [
+       'fu-cpu-helper-cet-common.c',

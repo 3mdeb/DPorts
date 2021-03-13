@@ -1,0 +1,9 @@
+--- subprojects/gusb.wrap.orig	2021-02-23 14:54:50 UTC
++++ subprojects/gusb.wrap
+@@ -1,4 +1,4 @@
+ [wrap-git]
+ directory = gusb
+-url = https://github.com/hughsie/libgusb.git
+-revision = 0.3.5
++url = https://github.com/3mdeb/libgusb.git
++revision = 8f5f3fcde306a5351fdc5ffdc3ac85bf0f60c0eb
