@@ -1,0 +1,8 @@
+--- subprojects/libxmlb.wrap.orig	2021-02-23 14:54:50 UTC
++++ subprojects/libxmlb.wrap
+@@ -1,4 +1,4 @@
+ [wrap-git]
+ directory = libxmlb
+ url = https://github.com/hughsie/libxmlb.git
+-revision = 0.1.14
++revision = 0.2.1

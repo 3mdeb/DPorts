@@ -1,0 +1,10 @@
+--- libfwupd/meson.build.orig	2021-02-23 14:54:50 UTC
++++ libfwupd/meson.build
+@@ -154,6 +154,7 @@ if get_option('introspection')
+     input: fwupd_gir[0],
+     output: 'fwupd.map',
+     command: [
++      python3,
+       join_paths(meson.source_root(), 'contrib', 'generate-version-script.py'),
+       'LIBFWUPD',
+       '@INPUT@',
